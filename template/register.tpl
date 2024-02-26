@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <div class="register-container">
-        <form action="routers/?route=register" method="post">
+    <div class="container">
+        <form action="?route=register" method="POST">
             <h2>Inscription</h2>
             <label for="username">Email:</label>
             <input type="email" id="username" name="username" required>
@@ -19,9 +21,11 @@
             <label for="confirm-password">Confirmer mot de passe:</label>
             <input type="password" id="confirm-password" name="confirm-password" required>
 
-            <button type="submit">Inscription</button>
+            <button type="submit" class="btn-action" name='subformRegister' onsubmit="this.style.visibility='hidden'">Inscription</button>
+
             <a href="?route=login" class="button">Se connecter</a>
         </form>
     </div>
 </body>
+
 </html>

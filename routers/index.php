@@ -1,11 +1,7 @@
 <?php
-if($_SERVER['REQUEST_METHOD'] == 'GET')
-{
-    if(isset($_GET['route']))
-        $action = $_GET['route'];
-    else{
-        $action=null;
-    }
+
+    $action = isset($_GET['route']) && $_GET['route'] ? $_GET['route'] : null;
+
     switch($action){
         case 'register':
             require('controllers/register-form.php');
@@ -24,5 +20,4 @@ if($_SERVER['REQUEST_METHOD'] == 'GET')
             require('controllers/index.php');
         break;
     }
-}
 ?>

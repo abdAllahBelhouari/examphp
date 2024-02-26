@@ -13,8 +13,8 @@ body {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
+    padding: 40px 20px;
+    width: max-content;
 }
 
 form {
@@ -24,17 +24,17 @@ form {
 
 label {
     margin-top: 10px;
+    font-size: 10pt;
 }
 
 input {
     padding: 8px;
     margin: 5px 0;
+    font-size: 13pt;
 }
-input[type="file"]{
-    display: block;
-}
+input[type="file"]{ display: block; }
 
-button, .button {
+button, .button, .btn-action {
     padding: 10px;
     background-color: #4caf50;
     color: #fff;
@@ -43,23 +43,30 @@ button, .button {
     cursor: pointer;
     text-decoration: none;
     display: flex;
+    font-size: 13pt;
+    margin: 2px;
 }
 
-button:hover, .button:hover {
-    background-color: #45a049;
-}
+.btn-action { background: #4569a0;}
+.btn-action:hover { background: #24559e;}
 
-nav {
-    margin-bottom: 20px;
-}
+button:hover, .button:hover { background-color: #45a049; }
+
+nav { margin-bottom: 20px; }
 
 nav a {
     margin-right: 10px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    font-size: 13pt;
 }
 
-nav a:hover {
-    color: #4caf50;
+nav a:hover { color: #4caf50; }
+.Link{ padding: 5px; }
+.Link a{
+    color: #aaa;
+    text-decoration: none;
+    font-weight: 500;
 }
+.Link a:hover { color: #f00; }
